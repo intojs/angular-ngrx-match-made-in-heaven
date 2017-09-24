@@ -1,0 +1,15 @@
+<app-card *ngFor="let user of users$ | async; trackBy: trackUserById">
+  <app-avatar card-avatar>
+    <img [src]="user.avatar_url" [alt]="user.login">
+  </app-avatar>
+  <span card-title>{{user.login}}</span>
+  <span card-link>
+      <a [href]="user.html_url" target="_blank">{{user.score}}k</a>
+    </span>
+  <app-follow-user-container
+    card-button
+    [user]="user"
+  >
+  </app-follow-user-container>
+</app-card>
+
