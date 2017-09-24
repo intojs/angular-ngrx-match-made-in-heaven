@@ -1,9 +1,9 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
 
-import { FollowedUsersState } from '../models/FollowedUsersState';
+import { FollowedUsers } from '../models/FollowedUsers';
 import * as followedUsersReduer from '../reducers/followed-users.reducer';
 
-export const getFollowedUsers = createFeatureSelector<FollowedUsersState>('followedUsers');
+export const getFollowedUsers = createFeatureSelector<FollowedUsers>('followedUsers');
 
 export const getById = createSelector(
   getFollowedUsers,

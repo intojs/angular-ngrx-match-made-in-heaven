@@ -1,9 +1,9 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
 
-import { XhrStatusState } from '../models/XhrStatusState';
+import { XhrStatus } from '../models/XhrStatus';
 import * as xhrStatusReducer from '../reducers/xhr-status.reducer';
 
-export const getXhrStatus = createFeatureSelector<XhrStatusState>('xhrStatus');
+export const getXhrStatus = createFeatureSelector<XhrStatus>('xhrStatus');
 
 export const getInProgress = createSelector(
   getXhrStatus,

@@ -16,9 +16,4 @@ export function usersReducer(state = initialState, {type, payload}: usersActions
   }
 }
 
-export const getTotalCount = (state: Users) => state.total_count;
-
-export const getIncompleteResults = (state: Users) => state.incomplete_results;
-
 export const getItems = (state: Users) => state.items;
-

@@ -1,15 +1,15 @@
 import * as _ from 'lodash';
 
-import { FollowedUsersState } from '../models/FollowedUsersState';
+import { FollowedUsers } from '../models/FollowedUsers';
 import { FollowedUser } from '../models/FollowedUser';
 import * as followedUsersActions from '../actions/followed-users.actions';
 
-const initialState: FollowedUsersState = {
+const initialState: FollowedUsers = {
   byId: null,
   allIds: []
 };
 
-export function followedUsersReducer(state = initialState, {type, payload}: followedUsersActions.Actions): FollowedUsersState {
+export function followedUsersReducer(state = initialState, {type, payload}: followedUsersActions.Actions): FollowedUsers {
   switch (type) {
     case followedUsersActions.FOLLOW_USER:
       const followedUser: FollowedUser = {
@@ -36,6 +36,6 @@ export function followedUsersReducer(state = initialState, {type, payload}: foll
   }
 }
 
-export const getById = (state: FollowedUsersState) => state.byId;
+export const getById = (state: FollowedUsers) => state.byId;
 
-export const getAllIds = (state: FollowedUsersState) => state.allIds;
+export const getAllIds = (state: FollowedUsers) => state.allIds;

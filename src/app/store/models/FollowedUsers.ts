@@ -1,6 +1,6 @@
 import { FollowedUser } from './FollowedUser';
 
-export interface FollowedUsersState {
+export interface FollowedUsers {
   byId: { [key: string]: FollowedUser };
   allIds: number[];
 }

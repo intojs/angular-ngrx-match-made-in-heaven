@@ -1,4 +1,4 @@
-export interface XhrStatusState {
+export interface XhrStatus {
   inProgress: boolean;
   hasError: boolean;
 }

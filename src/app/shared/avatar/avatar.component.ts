@@ -2,7 +2,11 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'app-avatar',
-  templateUrl: './avatar.component.html',
+  template: `
+    <div class="avatar">
+      <ng-content></ng-content>
+    </div>
+  `,
   styleUrls: ['./avatar.component.styl'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })

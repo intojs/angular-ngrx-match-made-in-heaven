@@ -1,5 +1,9 @@
+import { Users } from '../../domain/Users';
+import { FollowedUsers } from './FollowedUsers';
+import { XhrStatus } from './XhrStatus';
+
 export interface AppState {
-  users: any;
-  followedUsers: any;
-  xhrStatus: any;
+  users: Users;
+  followedUsers: FollowedUsers;
+  xhrStatus: XhrStatus;
 }
