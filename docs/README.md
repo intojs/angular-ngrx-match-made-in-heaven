@@ -1,1 +1,0 @@
-Superheroic JavaScript MVW Framework
