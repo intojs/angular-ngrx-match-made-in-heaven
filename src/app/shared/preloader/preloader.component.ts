@@ -16,7 +16,7 @@ import { Component } from '@angular/core';
       z-index: 400;
       left: 50%;
       margin-left: -27px;
-      background: url("/assets/loader.svg") no-repeat center center;
+      background: url("./assets/loader.svg") no-repeat center center;
     }
   `]
 })
