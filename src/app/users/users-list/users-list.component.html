@@ -1,3 +1,14 @@
+<app-card>
+  <app-avatar card-avatar>
+    <img src="https://avatars2.githubusercontent.com/u/9287" alt="avatar">
+  </app-avatar>
+  <span card-title>HTML Only</span>
+  <span card-link>
+      <a href="http://www.google.com" target="_blank">User</a>
+    </span>
+  <app-follow-button card-button>Follow</app-follow-button>
+</app-card>
+
 <app-card *ngFor="let user of users$ | async; trackBy: trackUserById">
   <app-avatar card-avatar>
     <img [src]="user.avatar_url" [alt]="user.login">
@@ -12,4 +23,3 @@
   >
   </app-follow-user-container>
 </app-card>
-

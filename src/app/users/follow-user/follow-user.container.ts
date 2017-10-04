@@ -20,7 +20,7 @@ import * as followedUsersSelectors from '../../store/selectors/followed-users.se
       *ngIf="isUserFollowed$ | async"
       (click)="unfollowUser()"
     >
-      Followed
+      Following
     </app-followed>
   `
 })
